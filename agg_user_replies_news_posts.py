@@ -13,7 +13,7 @@ PATH_USER_POSTS = PATH_DATA + 'user_posts/'
 
 PATH_RESULTS = os.environ.get('PATH_OPENSKY') + 'results/'
 PATH_USER_REPLIES_NEWS = PATH_RESULTS + 'agg_user_replies_news.csv'
-PATH_USER_REPLIES_NEWS_POSTS = PATH_RESULTS + 'agg_user_replies_news_posts.csv'
+PATH_USER_REPLIES_NEWS_POSTS = PATH_RESULTS + 'agg_user_replies_news_posts_2.csv'
 
 PATH_FEED_POSTS = PATH_DATA + 'feed_posts/'
 

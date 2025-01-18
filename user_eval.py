@@ -1,6 +1,7 @@
 import os
 import sys
 import dotenv
+import json
 
 import pandas as pd
 import numpy as np
@@ -11,13 +12,23 @@ PATH_USER_POSTS = PATH_DATA + 'user_posts/'
 
 def get_df_posts(user_id: int) -> pd.DataFrame:
     global ERROR
+    parse_dater = lambda x: pd.to_datetime(x, format='%Y%m%d%H%M')
+    data = []
+
     try:
         with open(PATH_USER_POSTS + str(user_id) + '.jsonl') as f:
-            return pd.read_json(f, lines=True)
+            for line in f:
+                data.append(json.loads(line))
+
+        df = pd.DataFrame(data)    
+        assert not df.empty, "Empty DataFrame"
+        df.date = pd.to_datetime(df.date, format='%Y%m%d%H%M')
     except Exception as e:
         ERROR = True
-        print(f"Exception in get_df_posts: {e}")
+        #print(f"Exception in get_df_posts: {e}")
         return pd.DataFrame()
+    
+    return df
 
 def get_langs(df_posts: pd.DataFrame) -> list:
     global ERROR
