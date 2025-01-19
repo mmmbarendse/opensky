@@ -11,6 +11,6 @@ The news feed, is a custom feed with high popularity containing posts from verif
 
 Disclaimer regarding sentiment score: In our analysis we are using only the sentiment label, however we don’t take into account the confidence score of the label.
 
-https://docs.bsky.app/docs/starter-templates/custom-feeds
-https://huggingface.co/docs/transformers/en/model_doc/roberta
-https://arxiv.org/abs/2404.18984
+https://docs.bsky.app/docs/starter-templates/custom-feeds  
+https://huggingface.co/docs/transformers/en/model_doc/roberta  
+https://arxiv.org/abs/2404.18984  
