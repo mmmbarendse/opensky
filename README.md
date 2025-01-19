@@ -5,7 +5,7 @@ THE DATA
 Data from ~4 million users, representing ~81% of all registered accounts. 
 235 million posts, covering various metadata like timestamps, language, likes, and replies.
 
-The data was scrapped from Bluesy by the official developer API. The sentiment analysis was conducted with roBERTa, based on Googles BERT data model. 
+The data was scrapped from Bluesky by the official developer API. The sentiment analysis was conducted with roBERTa, based on Googles BERT data model. 
 
 The news feed, is a custom feed with high popularity containing posts from verified news outlets. Custom feeds is a feature of Bluesy to create customised feeds that can be bookmarked and accessed by any time. 
 
